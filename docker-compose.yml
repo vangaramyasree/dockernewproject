@@ -25,7 +25,7 @@ services:
     volumes:
       - "dth"
   recharge:
-    image: sreevanga/recharge:latest
+    image: sreevanga/recharges:latest
     ports:
       - "84:80"
     deploy:
