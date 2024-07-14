@@ -11,7 +11,7 @@ services:
   aws:
     image: sreevanga/aws:latest
     ports:
-      - "82:80"
+      - "87:80"
     deploy:
       replicas: 3
     volumes:
@@ -19,7 +19,7 @@ services:
   azure:
     image: sreevanga/azure:latest
     ports:
-      - "83:80"
+      - "88:80"
     deploy:
       replicas: 3
     volumes:
