@@ -6,29 +6,21 @@ services:
       - "85:80"
     deploy:
       replicas: 3
-    volumes:
-      - "movies"
   aws:
     image: sreevanga/aws:latest
     ports:
       - "87:80"
     deploy:
       replicas: 3
-    volumes:
-      - "train"
   azure:
     image: sreevanga/azure:latest
     ports:
       - "88:80"
     deploy:
       replicas: 3
-    volumes:
-      - "dth"
   gcp:
     image: sreevanga/gcp:latest
     ports:
       - "86:80"
     deploy:
       replicas: 3
-    volumes:
-      - "recharge"
