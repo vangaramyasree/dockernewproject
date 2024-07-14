@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   movies:
-    image: sreevanga/movies1:latest
+    image: sreevanga/datascience:latest
     ports:
       - "81:80"
     deploy:
@@ -9,7 +9,7 @@ services:
     volumes:
       - "movies"
   train:
-    image: sreevanga/trains:latest
+    image: sreevanga/aws:latest
     ports:
       - "82:80"
     deploy:
@@ -17,7 +17,7 @@ services:
     volumes:
       - "train"
   dth:
-    image: sreevanga/dth:latest
+    image: sreevanga/azure:latest
     ports:
       - "83:80"
     deploy:
@@ -25,7 +25,7 @@ services:
     volumes:
       - "dth"
   recharge:
-    image: sreevanga/recharges:latest
+    image: sreevanga/GCP:latest
     ports:
       - "84:80"
     deploy:
