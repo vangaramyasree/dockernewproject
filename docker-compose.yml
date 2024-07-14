@@ -3,7 +3,7 @@ services:
   datascience:
     image: sreevanga/datascience:latest
     ports:
-      - "81:80"
+      - "85:80"
     deploy:
       replicas: 3
     volumes:
