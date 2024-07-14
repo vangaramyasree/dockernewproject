@@ -27,7 +27,7 @@ services:
   gcp:
     image: sreevanga/gcp:latest
     ports:
-      - "84:80"
+      - "86:80"
     deploy:
       replicas: 3
     volumes:
