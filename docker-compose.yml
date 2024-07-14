@@ -1,26 +1,34 @@
 version: '3.8'
 services:
   movies:
-    image: hpakala53/paytmmovies:latest
+    image: sreevanga/movies:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
+    volumes:
+      - "movies"
   train:
-    image: hpakala53/paytmtrain:latest
+    image: sreevanga/trains:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
+    volumes:
+      - "train"
   dth:
-    image: hpakala53/paytmdth:latest
+    image: sreevanga/dth:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
+    volumes:
+      - "dth"
   recharge:
-    image: hpakala53/paytmrecharge:latest
+    image: sreevanga/recharge:latest
     ports:
       - "84:80"
     deploy:
       replicas: 3
+    volumes:
+      - "recharge"
