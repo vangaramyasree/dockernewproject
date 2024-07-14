@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-  movies:
+  datascience:
     image: sreevanga/datascience:latest
     ports:
       - "81:80"
@@ -8,7 +8,7 @@ services:
       replicas: 3
     volumes:
       - "movies"
-  train:
+  aws:
     image: sreevanga/aws:latest
     ports:
       - "82:80"
@@ -16,7 +16,7 @@ services:
       replicas: 3
     volumes:
       - "train"
-  dth:
+  azure:
     image: sreevanga/azure:latest
     ports:
       - "83:80"
@@ -24,7 +24,7 @@ services:
       replicas: 3
     volumes:
       - "dth"
-  recharge:
+  gcp:
     image: sreevanga/gcp:latest
     ports:
       - "84:80"
