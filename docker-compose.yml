@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   movies:
-    image: sreevanga/movies:latest
+    image: sreevanga/movies1:latest
     ports:
       - "81:80"
     deploy:
